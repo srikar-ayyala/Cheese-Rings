@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+:root {
+    --text-color-primary: #9B2226;
+    --text-color-secondary: #AE2012;
+    --accent-color-light: #94D2BD;
+    --accent-color-medium: #0A9396; 
+    --accent-color-dark: #005F73;
+    --background-color-light: #E9D8A6;
+    --background-color-medium: #F89152;
+    --background-color-dark: #CA6702;
+    --color-dark: #001219;
+    --color-light: #A6CCBA;
+    --padding-inline: 20px;
+}
+
+h2 {
+    color: var(--color-dark);
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--background-color-medium);
+    color: var(--color-dark);
+}
+
+.outer-box {
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    background-color: var(--background-color-light);
+    padding: 15px;
+    border: 2px solid var(--text-color-primary);
+    border-radius: 15px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.heading h2 {
+    font-size: 3rem;
+    border-bottom: 1px solid var(--text-color-primary);
+}
+
+.heading p {
+    font-size: 1.5rem;
+    opacity: 0.7;
+    border-bottom: 0.5px solid var(--text-color-primary);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.invalid {
+    background-color: pink;
+    border: 1px solid palevioletred;
+    box-shadow: 0 0 5px palevioletred;
+}
+
+input:focus-visible {
+    border: 2px solid var(--color-dark);
+    outline: none;
+    border-radius: 5px;
+}
+
+
+.error-message {
+    background-color: rgb(212, 115, 102);
+    padding: 2px;
+    border: 1px solid var(--text-color-primary);
+    border-radius: 5px;
+    margin-top: -5px;
+}
+
+.hidden {
+    display: none;
+}
